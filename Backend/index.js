@@ -10,9 +10,9 @@ dotenv.config();
 
 connectDB();
 
-app.use("/api/blogs", blogRoutes);
-
 app.use(express.json());
+
+app.use("/api/blogs", blogRoutes);
 
 // start the lister for the server so it doesn't just stop on us after initial exection
 
